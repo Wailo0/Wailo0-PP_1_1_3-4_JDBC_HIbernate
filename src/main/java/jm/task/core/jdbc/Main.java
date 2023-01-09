@@ -8,19 +8,19 @@ public class Main extends Util {
     public static void main(String[] args) {
         UserService userService = new UserServiceImpl() ;
 
-//        us.createUsersTable();
-//        us.dropUsersTable();
-//        us.saveUser("Grisha", "Udin", (byte)32);
-//        us.saveUser("Fedor", "Aravadin", (byte)21);
-//        us.saveUser("Liner", "Pau", (byte)8);
-//        us.removeUserById(1);
+//        userService.createUsersTable();
 
-//        for (User e : us.getAllUsers()) {
+//        userService.saveUser("Grisha", "Udin", (byte)32);
+//        userService.saveUser("Fedor", "Aravadin", (byte)21);
+//        userService.saveUser("Liner", "Pau", (byte)4);
+//        userService.saveUser("Luke", "Skywalker", (byte)19);
+
+//        for (User e : userService.getAllUsers()) {
 //            System.out.println(e);
 //        }
 
-//        us.cleanUsersTable();
-
+//        userService.cleanUsersTable();
+//        userService.dropUsersTable();
 
     }
 }
