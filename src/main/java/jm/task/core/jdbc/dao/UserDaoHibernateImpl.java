@@ -38,15 +38,6 @@ public class UserDaoHibernateImpl extends Util implements UserDao {
         session.getTransaction().commit();
         session.close();
         System.out.println("User " + user + "  has been added!");
-
-//        Transaction transaction = null;
-//        try (Session session = sessionFactory.openSession()) {
-//            transaction = session.beginTransaction();
-//            session.save(user);
-//            transaction.commit();
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
     }
 
     @Override
