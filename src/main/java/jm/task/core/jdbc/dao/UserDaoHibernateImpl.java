@@ -37,7 +37,7 @@ public class UserDaoHibernateImpl extends Util implements UserDao {
         session.save(user);
         session.getTransaction().commit();
         session.close();
-        System.out.println("User " + user + "  has been added!");
+        System.out.println("User " + user + "  has been added");
     }
 
     @Override
@@ -47,6 +47,7 @@ public class UserDaoHibernateImpl extends Util implements UserDao {
         session.createQuery("delete User where id = " + id).executeUpdate();
         session.getTransaction().commit();
         session.close();
+        System.out.println("User with ID - " + id + " deleted");
     }
 
     @Override
@@ -56,6 +57,9 @@ public class UserDaoHibernateImpl extends Util implements UserDao {
         List<User> users = session.createQuery("from User").getResultList();
         session.getTransaction().commit();
         session.close();
+        for (User u : users) {
+            System.out.println(u);
+        }
         return users;
     }
 
@@ -66,5 +70,6 @@ public class UserDaoHibernateImpl extends Util implements UserDao {
         session.createQuery("delete User").executeUpdate();
         session.getTransaction().commit();
         session.close();
+        System.out.println("User table cleared");
     }
 }

@@ -15,10 +15,10 @@ public class Main extends Util {
 
 //        userService.createUsersTable();
 
-        userService.saveUser("Grisha", "Udin", (byte)32);
-        userService.saveUser("Fedor", "Aravadin", (byte)21);
-        userService.saveUser("Liner", "Pau", (byte)4);
-        userService.saveUser("Luke", "Skywalker", (byte)19);
+//        userService.saveUser("Grisha", "Udin", (byte)32);
+//        userService.saveUser("Fedor", "Aravadin", (byte)21);
+//        userService.saveUser("Liner", "Pau", (byte)4);
+//        userService.saveUser("Luke", "Skywalker", (byte)19);
 
 //        for (User e : userService.getAllUsers()) {
 //            System.out.println(e);
